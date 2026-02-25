@@ -1,4 +1,4 @@
-# Grawl
+# Shodh
 
 A fast, simple CLI tool and library to detect 404 pages on your website.
 
@@ -16,26 +16,26 @@ Built for developers who want quick broken-link checks without heavy dependencie
 ## Installation
 
 ```bash
-pip install grawl
+pip install shodh
 ```
 
 ## CLI Usage
 
 ```bash
 # Basic scan
-grawl https://example.com
+shodh https://example.com
 
 # Custom output file
-grawl https://example.com -o report.csv
+shodh https://example.com -o report.csv
 
 # Custom timeout (seconds)
-grawl https://example.com --timeout 10
+shodh https://example.com --timeout 10
 
 # Quiet mode (minimal output)
-grawl https://example.com -q
+shodh https://example.com -q
 
 # Show help
-grawl --help
+shodh --help
 ```
 
 ## Programmatic API

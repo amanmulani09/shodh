@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "grawl"
-version = "0.1.0"
+name = "shodh"
+version = "0.1.1"
 description = "A fast broken link scanner for websites"
 readme = "README.md"
 license = "MIT"
@@ -40,12 +40,12 @@ dev = [
 ]
 
 [project.scripts]
-grawl = "grawl.cli:main"
+shodh = "grawl.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/amanmulani/grawl"
-Repository = "https://github.com/amanmulani/grawl"
-Issues = "https://github.com/amanmulani/grawl/issues"
+Homepage = "https://github.com/amanmulani/shodh"
+Repository = "https://github.com/amanmulani/shodh"
+Issues = "https://github.com/amanmulani/shodh/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/grawl"]
