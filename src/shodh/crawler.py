@@ -1,4 +1,4 @@
-"""Core crawling logic for grawl."""
+"""Core crawling logic for shodh."""
 
 import csv
 import itertools
@@ -145,7 +145,7 @@ class Crawler:
             Fore.GREEN
             + """
 ==========================================
-      GRAWL - Broken Link Scanner
+      SHODH - Broken Link Scanner
       selectolax Engine Activated...
 ==========================================
 """
@@ -195,7 +195,7 @@ def scan(
         ScanReport containing all crawl results.
 
     Example:
-        >>> report = grawl.scan("https://example.com")
+        >>> report = shodh.scan("https://example.com")
         >>> print(f"Found {len(report.broken_links)} broken links")
     """
     crawler = Crawler(url, timeout=timeout, quiet=quiet, on_result=on_result)

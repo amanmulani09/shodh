@@ -10,12 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Initial release
-- CLI with `grawl <url>` command
+- CLI with `shodh <url>` command
 - Parameterized URL scanning (no more hardcoded URLs)
 - Custom output file with `-o` / `--output`
 - Configurable timeout with `-t` / `--timeout`
 - Quiet mode with `-q` / `--quiet`
-- Programmatic API: `grawl.scan(url)` for library usage
+- Programmatic API: `shodh.scan(url)` for library usage
 - Type hints throughout
 - Unit tests with mocked HTTP
 - CI/CD with GitHub Actions

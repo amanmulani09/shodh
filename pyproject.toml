@@ -40,7 +40,7 @@ dev = [
 ]
 
 [project.scripts]
-shodh = "grawl.cli:main"
+shodh = "shodh.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/amanmulani/shodh"
@@ -48,7 +48,7 @@ Repository = "https://github.com/amanmulani/shodh"
 Issues = "https://github.com/amanmulani/shodh/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/grawl"]
+packages = ["src/shodh"]
 
 [tool.ruff]
 target-version = "py311"
@@ -70,7 +70,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["grawl"]
+known-first-party = ["shodh"]
 
 [tool.mypy]
 python_version = "3.11"

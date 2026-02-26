@@ -1,4 +1,4 @@
-"""Pytest fixtures for grawl tests."""
+"""Pytest fixtures for shodh tests."""
 
 import pytest
 import responses

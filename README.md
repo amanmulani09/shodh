@@ -41,10 +41,10 @@ shodh --help
 ## Programmatic API
 
 ```python
-import grawl
+import shodh
 
 # Basic scan
-report = grawl.scan("https://example.com")
+report = shodh.scan("https://example.com")
 
 print(f"Scanned {report.total_scanned} pages")
 print(f"Found {len(report.broken_links)} broken links")
@@ -54,21 +54,21 @@ for result in report.broken_links:
     print(f"404: {result.url}")
 
 # With options
-report = grawl.scan(
+report = shodh.scan(
     "https://example.com",
     timeout=10,
     quiet=True,
 )
 
 # Export to CSV
-grawl.export_csv(report, "broken_links.csv")
+shodh.export_csv(report, "broken_links.csv")
 
 # Callback for real-time results
 def on_result(result):
     if result.is_broken:
         print(f"Found broken link: {result.url}")
 
-report = grawl.scan("https://example.com", on_result=on_result)
+report = shodh.scan("https://example.com", on_result=on_result)
 ```
 
 ## Development

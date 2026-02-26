@@ -3,8 +3,8 @@
 import pytest
 import responses
 
-from grawl import Crawler, InvalidURLError, scan
-from grawl.types import CrawlResult, ScanReport
+from shodh import Crawler, InvalidURLError, scan
+from shodh.types import CrawlResult, ScanReport
 
 
 class TestCrawler:

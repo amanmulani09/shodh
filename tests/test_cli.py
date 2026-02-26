@@ -7,7 +7,7 @@ import pytest
 import responses
 from click.testing import CliRunner
 
-from grawl.cli import main
+from shodh.cli import main
 
 
 @pytest.fixture
@@ -64,7 +64,7 @@ class TestCLI:
             output_file = os.path.join(tmpdir, "report.csv")
             result = runner.invoke(main, ["https://example.com", "-o", output_file, "-q"])
 
-            assert "GRAWL" not in result.output
+            assert "SHODH" not in result.output
             assert "Total Pages Scanned" in result.output
 
     @responses.activate

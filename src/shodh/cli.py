@@ -1,4 +1,4 @@
-"""Command-line interface for grawl."""
+"""Command-line interface for shodh."""
 
 import sys
 
@@ -6,7 +6,7 @@ import click
 from colorama import Fore
 
 from .crawler import Crawler, export_csv
-from .exceptions import GrawlError
+from .exceptions import ShodhError
 
 
 @click.command()
@@ -32,7 +32,7 @@ from .exceptions import GrawlError
     is_flag=True,
     help="Suppress output except errors and summary.",
 )
-@click.version_option(package_name="grawl")
+@click.version_option(package_name="shodh")
 def main(url: str, output: str, timeout: int, quiet: bool) -> None:
     """Scan a website for broken (404) links.
 
@@ -52,7 +52,7 @@ def main(url: str, output: str, timeout: int, quiet: bool) -> None:
         export_csv(report, output)
         print(Fore.GREEN + f"\nReport exported: {output}")
 
-    except GrawlError as e:
+    except ShodhError as e:
         click.echo(Fore.RED + f"Error: {e}", err=True)
         sys.exit(1)
     except KeyboardInterrupt:

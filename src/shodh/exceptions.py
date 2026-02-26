@@ -1,13 +1,13 @@
-"""Custom exceptions for grawl."""
+"""Custom exceptions for shodh."""
 
 
-class GrawlError(Exception):
-    """Base exception for all grawl errors."""
+class ShodhError(Exception):
+    """Base exception for all shodh errors."""
 
     pass
 
 
-class InvalidURLError(GrawlError):
+class InvalidURLError(ShodhError):
     """Raised when an invalid URL is provided."""
 
     def __init__(self, url: str, reason: str = "Invalid URL format"):
@@ -16,7 +16,7 @@ class InvalidURLError(GrawlError):
         super().__init__(f"{reason}: {url}")
 
 
-class CrawlError(GrawlError):
+class CrawlError(ShodhError):
     """Raised when a crawl operation fails."""
 
     def __init__(self, url: str, cause: Exception | None = None):

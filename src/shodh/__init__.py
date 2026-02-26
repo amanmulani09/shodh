@@ -1,7 +1,7 @@
-"""Grawl - A fast broken link scanner for websites."""
+"""Shodh - A fast broken link scanner for websites."""
 
 from .crawler import Crawler, export_csv, scan
-from .exceptions import CrawlError, GrawlError, InvalidURLError
+from .exceptions import CrawlError, InvalidURLError, ShodhError
 from .types import CrawlResult, ScanReport
 
 __all__ = [
@@ -10,7 +10,7 @@ __all__ = [
     "export_csv",
     "CrawlResult",
     "ScanReport",
-    "GrawlError",
+    "ShodhError",
     "InvalidURLError",
     "CrawlError",
 ]

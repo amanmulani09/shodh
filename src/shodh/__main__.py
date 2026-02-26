@@ -1,4 +1,4 @@
-"""Entry point for python -m grawl."""
+"""Entry point for python -m shodh."""
 
 from .cli import main
 

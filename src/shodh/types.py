@@ -1,4 +1,4 @@
-"""Data types for grawl scan results."""
+"""Data types for shodh scan results."""
 
 from dataclasses import dataclass, field
 
